@@ -1,0 +1,134 @@
+/*Estilo Cabeçalho*/
+.navegacao-links {
+    margin: 17px auto;
+    text-align: center;
+}
+
+.navegacao-links a{
+    margin: 10px 10px;
+    text-decoration: none;
+    border-bottom: 2px solid #00cad1;
+    color: black;
+}
+
+.navegacao-links a:hover{
+    color: #1a868a;
+}
+
+.container h1{
+    margin-bottom: 50px;
+}
+
+/*Fim do cabeçalho*/
+
+.bloco{
+    margin-bottom: 30px ;
+}
+
+.bloco-texto{
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.box-tabela-especialista{
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+}
+
+.box-tabela-especialista img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.tabelas-especialistas{
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+
+.tabelas-especialistas thead tr{
+    background-color: #00cad1;
+    color: #fff;
+}
+
+.tabelas-especialistas tr{
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabela-especialistas tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+  }
+
+  .tabela-especialistas th, .tabela-especialistas td  {
+    padding: 10px;
+  }
+
+/* Responsividade*/
+
+  @media(min-width: 426px) and (max-width: 768px){
+    .box-tabela-especialista img{
+        display: none;
+    }
+
+    .tabelas-especialistas{
+        border-spacing: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+
+
+  @media (min-width: 320px) and (max-width: 425px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo-links a{
+        padding: 10px;
+        text-align: center;
+    }
+
+    section.navegacao.container {
+        height: 200px;
+    }
+
+    .navegacao-links nav{
+        display: flex;
+        justify-content: column;
+
+    }
+
+    .links-navegacao{
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 6px;
+        margin: 5px;
+    }
+
+    .box-tabela-especialista img{
+        display: none;
+    }
+
+    .tabelas-especialistas{
+        border-spacing: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+  }
+
+

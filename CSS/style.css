@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+.topo{
+    background-color: #00cad1;
+    width: 100%;
+}
+
+.topo img{
+    max-width: 150px;
+}
+
+.topo .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 atuo;
+}
+
+.topo-titulo{
+   font-weight: 600;
+   font-size: 28px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.topo-titulo a{
+    display: flex;
+}
+
+.topo-logo{
+    height: 60px;
+}
+
+.topo-links{
+    display: flex;
+}
+
+.topo-links a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo-links a:hover{
+    color: #004b4c;
+}
+
+/* Visão geral*/
+
+#sobre, #especialidades, #contrato{
+    padding: 40px 20px 0;
+}
+
+.box-visao-geral{
+    position: relative;
+    background-image: url('../assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.box-visao-geral-titulo{
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.box-visao-geral h1{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0;
+}
+
+.box-sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-sobre h3{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box-sobre img{
+    height: 250px;
+}
+
+.box-especialidades{
+    display: flex; 
+}
+
+.box-sobre-especialidades{
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.box-sobre-especialidades img{
+    width: 100%;
+}
+
+.box-sobre-especialidades figcaption{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.link-horario{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-horarios{
+     background-color: #00cad1;
+     color: #fff;
+     font-weight: 600;
+     text-transform: uppercase;
+     padding: 10px 20px;
+     text-decoration: none;
+
+}
+
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer .container {
+    text-align: center;
+  }
+
+
+
+  @media (max-width: 1024px) {
+    .box-visao-geral { height: 400px;}
+  }
+
+  @media (min-width: 426px) and (max-width: 768px){
+      .box-visao-geral{height: 300px;}
+      .box-sobre img{display: none;}
+
+      .box-especialidades{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-sobre-especialidades{
+        width: 33.33%; 
+    }
+
+  }
+  
+  @media (max-width: 425px){
+
+    .topo-links a{
+        padding: 10px 35px;
+        border-top: 1px solid #0d6e71;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .box-visao-geral {
+         height: 200px;}
+
+    .box-visao-geral h1 {
+         font-size: 28px;}
+
+    .box-sobre img{display: none;}
+    .box-especialidade {
+      width: 100%;
+  }
+    .box-especialidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-sobre-especialidades{
+        width: 100%;
+    }
+
+    .container-conteudo{
+        text-align: center;
+        font-size: 15px;
+        width: 90%;
+    }
+
+    iframe{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    footer img{
+        object-fit: contain;
+    }
+  }
+
+
+
