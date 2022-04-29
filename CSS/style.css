@@ -174,7 +174,12 @@ footer {
     text-align: center;
   }
 
-
+@media (min-width: 1025px) {
+    .box-visao-geral{
+        height: 700px;
+    }
+    
+}
 
   @media (max-width: 1024px) {
     .box-visao-geral { height: 400px;}
